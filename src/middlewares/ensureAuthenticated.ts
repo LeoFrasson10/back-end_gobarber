@@ -3,6 +3,8 @@ import { verify } from 'jsonwebtoken';
 
 import authConfig from '../config/auth';
 
+import AppError from '../errors/AppError';
+
 interface TokenPayLoad{
   iar: number;
   exp: number;
@@ -15,7 +17,7 @@ export default function ensureAutheticated(request: Request, response: Response,
   const authHeader = request.headers.authorization;
 
   if(!authHeader) {
-    throw new Error("Jwt token is missing");
+    throw new AppError("Jwt token is missing", 401);
   }
 
   // barer ajsnsjdkl
@@ -33,6 +35,6 @@ export default function ensureAutheticated(request: Request, response: Response,
 
     return next();
   } catch (err) {
-    throw new Error("Inavlid JWT token");    
+    throw new AppError("Inavlid JWT token", 401);    
   }
 }
