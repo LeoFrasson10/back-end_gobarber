@@ -2,8 +2,8 @@ import 'reflect-metadata';
 import express, { Request, Response, NextFunction} from 'express';
 
 import cors from 'cors';
-
 import 'express-async-errors';
+
 import routes from '@shared/infra/http/routes';
 import uploadConfig from '@config/upload';
 import AppError from '@shared/errors/AppError';
@@ -17,7 +17,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 //rota para visualizar os arquivos
-app.use('/files', express.static(uploadConfig.directory));
+app.use('/files', express.static(uploadConfig.uploadsFolder));
 app.use(routes);
 
 //tratativas de erros
