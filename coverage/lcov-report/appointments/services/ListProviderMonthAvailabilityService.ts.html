@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for users/services/AuthenticateUserService.ts</title>
+    <title>Code coverage report for appointments/services/ListProviderMonthAvailabilityService.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,34 +19,34 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">users/services</a> AuthenticateUserService.ts</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">appointments/services</a> ListProviderMonthAvailabilityService.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>24/24</span>
+                <span class='fraction'>21/21</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>5/5</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>6/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>19/19</span>
+                <span class='fraction'>16/16</span>
             </div>
         
             
@@ -114,18 +114,9 @@
 <a name='L55'></a><a href='#L55'>55</a>
 <a name='L56'></a><a href='#L56'>56</a>
 <a name='L57'></a><a href='#L57'>57</a>
-<a name='L58'></a><a href='#L58'>58</a>
-<a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a>
-<a name='L61'></a><a href='#L61'>61</a>
-<a name='L62'></a><a href='#L62'>62</a>
-<a name='L63'></a><a href='#L63'>63</a>
-<a name='L64'></a><a href='#L64'>64</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L58'></a><a href='#L58'>58</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -144,33 +135,11 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -183,70 +152,83 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import { sign } from 'jsonwebtoken';
-import authConfig from '@config/auth';
+<span class="cline-any cline-yes">31x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">31x</span>
+<span class="cline-any cline-yes">341x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">31x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">import {injectable, inject} from 'tsyringe';
+import {getDaysInMonth, getDate} from 'date-fns'
 &nbsp;
-import {injectable, inject} from 'tsyringe';
-&nbsp;
-import AppError from '@shared/errors/AppError';
-import IUsersRepository from '../repositories/IUsersRepository';
-import User from "../infra/typeorm/entities/User";
-&nbsp;
-import IHashProvider from '../providers/HashProvider/models/IHashProvider';
+import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 &nbsp;
 interface IRequest{
-  email: string;
-  password: string;
+  provider_id: string;
+  month: number;
+  year: number;
+&nbsp;
 }
-interface IResponse {
-  user: User;
-  token: string;
-}
+&nbsp;
+type IResponse = Array&lt;{
+  day: number;
+  available: boolean;
+}&gt;;
 &nbsp;
 @injectable()
-class AuthenticateUserService{
+class ListProviderMonthAvailabilityService {
   constructor(
-    @inject('UsersRepository')
-    private usersRepository: IUsersRepository,
-&nbsp;
-    @inject('HashProvider')
-    private hashProvider: IHashProvider,
+    @inject('AppointmentsRepository')
+    private appointmentsRepository: IAppointmentsRepository,
   ){}
 &nbsp;
-  public async execute({ email, password }: IRequest): Promise&lt;IResponse&gt; {
+  public async execute({ provider_id, year, month }: IRequest) : Promise&lt;IResponse&gt;{
+    const appointments = await this.appointmentsRepository.findAllInMonthFromProvider({
+      provider_id,
+      year,
+      month,
+    })
     
-    const user = await this.usersRepository.findByEmail(email);
+    const numberOfDaysIsMonth = getDaysInMonth(
+      new Date(year, month -1)
+    );
 &nbsp;
-    if( !user) {
-      throw new AppError("Incorret email/password combination", 401);      
-    }
+    //array com tds os dias do mes
+    const eachDayArray = Array.from(
+      { length: numberOfDaysIsMonth },
+      (_, index) =&gt; index + 1,
+    );
+    
+    //filtra por dia e vÊ se tem horario disponivel
+    const availability = eachDayArray.map(day =&gt; {
+      const appointmentsInDay = appointments.filter(appointment =&gt; {
+        return getDate(appointment.date) === day;
+      });
 &nbsp;
-    //user.password - senha criptografada
-    //password - senha não criptografada
-&nbsp;
-    const passwordMatched = await this.hashProvider.compareHash(password, user.password);
-&nbsp;
-    if(!passwordMatched){
-      throw new AppError("Incorret email/password combination", 401);      
-    }
-&nbsp;
-    const { secret, expiresIn } = authConfig.jwt;
-&nbsp;
-    const token = sign({}, secret, {
-      subject: user.id, //sempre ser o id do usuario
-      expiresIn, //expirar sessao
+      return {
+        day,
+        available: appointmentsInDay.length &lt; 10,
+      }
     });
-    //usuário autenticado
 &nbsp;
-&nbsp;
-    return {
-      user,
-      token,
-    }
+    return availability;
   }
 }
 &nbsp;
-export default AuthenticateUserService;</pre></td></tr></table></pre>
+export default ListProviderMonthAvailabilityService ;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
