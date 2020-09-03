@@ -4,6 +4,8 @@ import express, { Request, Response, NextFunction} from 'express';
 import cors from 'cors';
 import 'express-async-errors';
 
+import { errors } from 'celebrate';
+
 import routes from '@shared/infra/http/routes';
 import uploadConfig from '@config/upload';
 import AppError from '@shared/errors/AppError';
@@ -19,6 +21,8 @@ app.use(express.json());
 //rota para visualizar os arquivos
 app.use('/files', express.static(uploadConfig.uploadsFolder));
 app.use(routes);
+
+app.use(errors());
 
 //tratativas de erros
 app.use((err: Error, request: Request, response: Response, _: NextFunction) =>{
